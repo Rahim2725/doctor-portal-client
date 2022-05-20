@@ -7,8 +7,8 @@ const Review = ({ review }) => {
             <div className="card-body">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas unde beatae in distinctio quod a? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nesciunt!</p>
                 <div className='flex items-center mt-3'>
-                    <div class="avatar">
-                        <div class="w-16 rounded-full ring ring-primary ring-offset-base-100">
+                    <div className="avatar">
+                        <div className="w-16 rounded-full ring ring-primary ring-offset-base-100">
                             <img src={img} />
                         </div>
                     </div>
