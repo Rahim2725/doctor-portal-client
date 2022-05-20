@@ -3,9 +3,9 @@ import React from 'react';
 const Review = ({ review }) => {
     const { name, img, location } = review;
     return (
-        <div class="card w-96 bg-base-100 shadow-xl">
-            <div class="card-body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas unde beatae in distinctio quod a?</p>
+        <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card-body">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas unde beatae in distinctio quod a? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nesciunt!</p>
                 <div className='flex items-center mt-3'>
                     <div class="avatar">
                         <div class="w-16 rounded-full ring ring-primary ring-offset-base-100">

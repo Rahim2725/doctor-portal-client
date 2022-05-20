@@ -15,5 +15,4 @@ const Info = () => {
         </div>
     );
 };
-
 export default Info;

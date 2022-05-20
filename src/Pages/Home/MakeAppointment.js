@@ -1,7 +1,7 @@
 import React from 'react';
-import doctor from '../../assets/images/doctor.png'
+import appointment from '../../assets/images/appointment.png';
+import doctor from '../../assets/images/doctor.png';
 import PrimaryButton from '../Sheard/PrimaryButton';
-import appointment from '../../assets/images/appointment.png'
 const MakeAppointment = () => {
     return (
         <section
