@@ -11,7 +11,7 @@ import Navber from './Pages/Sheard/Navbar/Navber';
 
 function App() {
   return (
-    <div>
+    <div >
      <Navber></Navber>
      <Routes>
        <Route path='/' element={<Home></Home>}></Route>
