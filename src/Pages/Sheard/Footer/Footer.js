@@ -1,12 +1,14 @@
 import React from 'react';
 import footer from '../../../assets/images/footer.png';
+
+
 const Footer = () => {
     return (
         <footer style={{
             background: `url(${footer})`,
             backgroundSize: 'cover'
         }}
-            className="p-12">
+            className="pt-12">
 
             <div className='footer'>
                 <div>
@@ -30,7 +32,7 @@ const Footer = () => {
                     <a className="link link-hover">Cookie policy</a>
                 </div>
             </div>
-            <div className='text-center mt-10'>
+            <div className='text-center my-10'>
                 <p>Copyright © 2022 - All right reserved by Doctor Portal</p>
             </div>
 

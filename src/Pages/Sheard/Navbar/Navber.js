@@ -1,14 +1,31 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
+import Loading from '../Loading';
 
 const Navber = () => {
+    const [user, loading, error] = useAuthState(auth);
+    const navigate = useNavigate();
+    if (loading) {
+        return <Loading></Loading>
+    }
+    const logout = () => {
+        signOut(auth);
+        navigate('/home')
+      };
+      
     const nabarmenu = <>
         <li><Link to="/home"> Home</Link></li>
         <li><Link to="/about"> About</Link></li>
         <li><Link to="/appointment"> Appointment</Link></li>
         <li><Link to="/review">Review</Link></li>
         <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/login">Login</Link></li></>
+        <li>{user ?
+            <a onClick={logout}>Sign Out</a>
+            :
+            <Link to="/login">Login</Link>}</li></>
     return (
         <div className="navbar bg-base-100 ">
             <div className="navbar-start">

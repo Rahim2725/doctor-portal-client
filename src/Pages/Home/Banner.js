@@ -4,7 +4,7 @@ import PrimaryButton from '../Sheard/PrimaryButton';
 
 const Banner = () => {
     return (
-        <div className="hero min-h-screen">
+        <div className="hero my-24">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src={banner} className=" max-w-sm lg:max-w-lg lg:ml-12   rounded-lg shadow-2xl" />
                 <div>
